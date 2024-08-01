@@ -1,3 +1,7 @@
+/**
+ * The code consists of several TypeScript functions that perform various tasks based on conditions and
+ * input parameters.
+ 
 function HelloWorld() {
     console.log('สวัสดีท่านสมาชิก')
 }
@@ -29,4 +33,25 @@ function gogo(sex: string, heigh: number, weight: number) {
         console.log("ไม่เข้าเกณฑ์")
     }
 }
-gogo('male', 180, 49)
+gogo('male', 180, 49)*/
+
+function BMIBySharky(height: number, weight: number) {
+  height = height / 100;
+  if (weight <= 0 || weight >= 639 || height <= 0 || height >= 3) {
+    console.log("กรอกค่าไม่ถูกต้อง");
+    return;
+  }
+  let BMI: number = weight / (height * height);
+  if (BMI > 30) {
+    console.log("อ้วนมาก");
+  } else if (BMI >= 25 && BMI <= 29.9) {
+    console.log("อ้วน");
+  } else if (BMI >= 23 && BMI <= 24.9) {
+    console.log("น้ำหนักเกิน");
+  } else if (BMI >= 18.5 && BMI <= 22.9) {
+    console.log("น้ำหนักปกติ เหมาะสม");
+  } else {
+    console.log("ผอมเกินไป");
+  }
+}
+BMIBySharky(190, 0);
