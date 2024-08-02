@@ -24,6 +24,7 @@
 }
 sayHi(1);
 */
+/**
 function sayHi(dayOfweek: number) {
   switch (dayOfweek) {
     case 1:
@@ -53,3 +54,4 @@ function sayHi(dayOfweek: number) {
   }
 }
 sayHi(12);
+*/
