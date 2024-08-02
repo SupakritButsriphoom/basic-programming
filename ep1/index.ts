@@ -1,1 +1,1 @@
-const fullName: string = 'ศุภกฤต บุตรศรีภูมิ'
+const fullName: string = "ศุภกฤต บุตรศรีภูมิ";
