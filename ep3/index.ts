@@ -54,4 +54,4 @@ function BMIBySharky(height: number, weight: number) {
     console.log("น้ำหนักน้อย/ผอม");
   }
 }
-BMIBySharky(190, 0);
+BMIBySharky(190, 5000);
