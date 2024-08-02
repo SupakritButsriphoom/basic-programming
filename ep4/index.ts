@@ -55,3 +55,34 @@ function sayHi(dayOfweek: number) {
 }
 sayHi(12);
 */
+
+/* The code snippet is demonstrating some examples of number precision in JavaScript. */
+// const x: number = 999999999999999;
+// const y: number = 9999999999999999;
+// console.log(x);
+// console.log(y);
+
+// const z: number = 0.1 + 0.2;
+// console.log(z);
+
+// function sHa(n: number) {
+//   const x = n.toLocaleString();
+//   return x;
+// }
+// console.log(sHa(10000));
+
+// function fixedDecima(n: number, digit:number){
+//     const x= n.toFixed(digit)
+//     return x
+// }
+// console.log(fixedDecima(50.999,4))
+
+// function sHa(n:number){
+//     const x= n.toLocaleString()
+//     return x
+// }
+// console.log(sHa(10000))
+
+const str: string = "Supakrit";
+
+console.log(str.indexOf("r"));
