@@ -21,12 +21,25 @@
 // console.log('เรียง ก-ฮ: ',animalNamearray.sort())
 // console.log('เรียง ฮ-ก: ',animalNamearray.reverse())
 // console.log('slice 0-2: ',animalNamearray.slice(0,2))
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits.sort());
-console.log(fruits.reverse());
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// console.log(fruits.sort());
+// console.log(fruits.reverse());
 
-const me = {
-  firstName: "Supakrit",
-  lastName: "Butsriphoom",
-  age: 20,
-};
+// const me = {
+//   firstName: "Supakrit",
+//   lastName: "Butsriphoom",
+//   age: 20,
+// };
+const personalInfo = {
+  firstName :"กล้วยทอด",
+  lastName :"ลิงทอด",
+  houseNumber :"66",
+  villageNumber :"5",
+  road :"ทศกัณฐ์ 2",
+  subDistrict :"หนามด",
+  district :"จอมเงิน",
+  postalCode :"10140",
+  telePhone :"0881234587",
+  cellPhone :"0785432188",
+  email :"Happy@gmail.com"
+}
