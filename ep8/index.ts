@@ -1608,3 +1608,18 @@ const newsTh = database.results.filter(function (element, indenx) {
   return element.language === "thai";
 });
 console.log(newsTh); //เอาเฉพาะข่าวภาษาไทย,เอาที่มาจาก thaipbs,map title,link.description.source_id,image_url
+const newsThai = database.results
+  .filter(function (element, index) {
+    return element.language === "thai" && element.source_id === "thaipbs";
+  })
+  .map(function (element, index) {
+    return {
+      title: element.title,
+      link: element.link,
+      description: element.description,
+      source_id: element.source_id,
+      image_url: element.image_url,
+    };
+  });
+
+console.log(newsThai);
