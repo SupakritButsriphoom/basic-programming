@@ -4250,5 +4250,30 @@ const football = {
       return element.team.name === "Manchester City";
     });
   },
+  goalDiff: function () {
+    return this.league.standings.filter(function (element, index) {
+      return element.team.name === "Manchester United";
+    })[0].goalsDiff;
+  },
+  lowScore40: function () {
+    return this.league.standings.filter(function (element, index) {
+      return element.points < 40;
+    });
+  },
+  goalDiffernce: function () {
+    return this.league.standings.filter(function (element, index) {
+      return element.goalsDiff > 0;
+    });
+  },
+  lostAtHomeMoreThan5: function () {
+    return this.league.standings.filter(function (element, index) {
+      return element.home.lose > 5;
+    });
+  },
+  lostAtAwaysMoreThan5: function () {
+    return this.league.standings.filter(function (element, index) {
+      return element.away.lose > 5;
+    });
+  },
 };
 console.log(football.relegation());
